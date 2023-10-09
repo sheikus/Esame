@@ -22,6 +22,7 @@ header {
   margin: 0 auto;
 }
 
+
 .fa-brands a:hover {
   color: #1dbbf4;
 }
@@ -484,12 +485,12 @@ footer {
   }
 
   .div2foto {
-    width: 80%;
+    width: 70%;
     float: right;
-    padding-left: 8em;
+    padding-left: 2em;
   }
 
-  .div2foto img {width: 65%;}
+  .div2foto img {width: 60%;}
 
   #toggleButton {display: none;
       }
@@ -528,10 +529,15 @@ footer {
   width: 12em;
 }
 
+.containercontatti{width: 85%;}
+
 #toggleButton {width: 5em;
               margin-right: 1.5em;
               margin-top: -1em;}
 .album {width: 100%; padding-left: 2em; padding-right: 2em;}
+
+.div2foto {width:90%;}
+
 
 }
 
@@ -557,7 +563,6 @@ footer {
 
 @media screen and (max-width: 1024px) {
 
-.div2foto {width:%;}
 
 
 }
