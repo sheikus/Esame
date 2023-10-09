@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Sheik</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0af2b31f76.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="main_menu">
+            <div class="logo_area">
+                <a><img id="logo" src="img/titolo.png"></a>
+            </div>
+
+            <div class="inner_main_menu">
+                <ul class="menu">
+                    <li><a class="blacklink sottolineati" href="index.html">home</a></li>
+                    <li><a class="active sottolineati" href="eventi.html">eventi</a></li>
+                    <li><a class="blacklink sottolineati" href="album.html">album</a></li>
+                    <li><a class="blacklink sottolineati" href="bio.html">bio</a></li>
+                    <li><a class="blacklink sottolineati" href="foto.html">foto</a></li>
+                    <li><a class="blacklink sottolineati" href="contatti.html">contatti</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="mobile_menu">
+            <div class="logo_area">
+                <a><img id="logo" src="img/titolo.png"></a>
+            </div>
+            <button id="toggleButton"><i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></button>
+        </div>
+        <div class="inner_main_menu_mobile" style="display: none;">
+            <ul class="menu">
+                <li><a class="blacklink sottolineati" href="index.html">home</a></li>
+                <li><a class="blacklink sottolineati" href="eventi.html">eventi</a></li>
+                <li><a class="blacklink sottolineati" href="album.html">album</a></li>
+                <li><a class="blacklink sottolineati" href="bio.html">bio</a></li>
+                <li><a class="blacklink sottolineati" href="foto.html">foto</a></li>
+                <li><a class="blacklink sottolineati" href="contatti.html">contatti</a></li>
+            </ul>
+        </div>
+    </header>
+
+  <body>
+    <div class="layout_eventi">
+      <div class="div1eventi">
+        <div class="div1eventicontent">
+          <ul>
+            <li>
+              <h2 class="capitolieventi">8 OTTOBRE 2023</h2>
+              <p>Millenium - Bologna</p>
+            </li>
+          </ul>
+        </div>
+        <div class="div1eventicontent">
+          <ul>
+            <li>
+              <h2 class="capitolieventi">23 SETTEMBRE 2023</h2>
+              <p>Pontelungo Summer Festival - Bologna</p>
+            </li>
+          </ul>
+        </div>
+        <div class="div1eventicontent">
+          <ul>
+            <li>
+              <h2 class="capitolieventi">10 SETTEMBRE 2023</h2>
+              <p>Unity Summer Festival ThenightOwl - Londra</p>
+            </li>
+          </ul>
+        </div>
+        <div class="div1eventicontent">
+          <ul>
+            <li>
+              <h2 class="capitolieventi">19 AGOSTO 2023</h2>
+              <p>Room’s Garden - Cagliari</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="div2fotoeventi">
+        <div class="gradient"></div>
+        <img id="giallo" src="img/giallo.JPG" />
+      </div>
+    </div>
+
+
+    <div style="clear: both"></div>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>Sheik US - Daniele Marini</p>
+            <ul class="socials">
+                <li><a target="_blank" href="https://www.facebook.com/sheikus"><i
+                            class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/sheik_underskillz/"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/@SHEIKUS"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li><a target="_blank" href="https://open.spotify.com/intl-it/artist/4XQDe7NCA4r7UR7ZrLYYtW"><i
+                            class="fa-brands fa-spotify"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const menuMobile = document.querySelector('.inner_main_menu_mobile');
+
+        // Aggiungi un gestore di eventi al pulsante
+        toggleButton.addEventListener('click', function () {
+            // Verifica lo stato corrente del display del menu mobile
+            if (menuMobile.style.display === 'none' || menuMobile.style.display === '') {
+                // Se il menu è nascosto, mostralo
+                menuMobile.style.display = 'block';
+            } else {
+                // Altrimenti, nascondilo
+                menuMobile.style.display = 'none';
+            }
+        });
+    </script>
+  </body>
+</html>

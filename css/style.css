@@ -1,0 +1,563 @@
+body {
+  background-color: #000000 !important;
+}
+
+header {
+  font-family: "Orbitron", sans-serif;
+}
+
+#main_menu,
+.div1social {
+  display: none;
+}
+
+#mobile_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div2foto img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fa-brands a:hover {
+  color: #1dbbf4;
+}
+
+#logo {
+  height: 220px;
+}
+
+/*EVENTI*/
+
+.layout_eventi {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.div1eventi {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.div1eventi {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 7em;
+}
+
+.div1eventicontent {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  max-width: 800px;
+  position: relative;
+}
+
+.div1eventicontent ul {
+  list-style: none;
+}
+
+.div1eventicontent ul li {
+  padding: 20px;
+  background-color: #0d0d0d;
+  border-radius: 10px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.div1eventi .capitolieventi {
+  color: #d9160f;
+}
+
+.div1eventicontent ul li p {
+  color: #f2f2f2;
+}
+
+.div2fotoeventi {
+  position: relative;
+  padding-top: 7em;
+}
+
+.gradient {
+  height: 89%;
+  width: 100%;
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 25%,
+    rgb(0, 0, 0) 100%
+  );
+
+  position: absolute;
+  padding-top: 15em;
+}
+
+#giallo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} /* padding-right: 5px;*/
+
+/*biografia*/
+.active {
+  text-decoration-line: underline !important;
+  text-decoration-thickness: 5px !important;
+  text-underline-offset: 0.5em !important ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BIO */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 100px;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+
+.timeline ul li {
+  padding: 20px;
+  background-color: #0d0d0d;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.timeline ul li p {
+  color: #f2f2f2;
+}
+/*.timeline ul li p:hover {color: #1dbbf4;}*/
+
+.timelineulli: last-child {
+  margin-bottom: 0;
+}
+
+.timeline-content h1 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.timeline-content .capitoli {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #d9160f;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline::before {
+    content: "";
+    position: absolute;
+    height: 82%;
+    width: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+  }
+}
+
+.timeline ul li::after {
+  content: " ";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: gray;
+  border-radius: 50%;
+  top: 0;
+}
+
+.timeline ul li:nth-child(odd)::after {
+  transform: translateX(50%, -50%);
+  right: -40px;
+}
+.timeline ul li:nth-child(even)::after {
+  transform: translateX(-50%, 50%) 0;
+  left: -40px;
+}
+
+.timeline ul li:hover::after {
+  background-color: #1dbbf4;
+}
+
+.album {
+  padding-top: 100px;
+  padding-left: 150px;
+
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.containeralbum {
+  align-items: center;
+  justify-content: center;
+}
+
+/*FOTO*/
+
+.carousel {
+  padding-top: 7em;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+/*CONTATTI*/
+
+.containercontatti {
+  width: 50%;
+  margin: 50px auto;
+  padding-top: 6em;
+  font-family: "Montserrat", sans-serif;
+  color: #d9160f;
+}
+
+.contact-box {
+  background: white;
+  border-radius: 10px;
+  display: flex;
+}
+
+.contact-left {
+  flex-basis: 100%;
+  padding: 40px;
+}
+
+.containercontatti h1 {
+  margin-bottom: 5px;
+}
+
+.containercontatti h2 {
+  margin-bottom: 45px;
+  color: #f2f2f2;
+  letter-spacing: 3px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.input-row .group-group {
+  flex-basis: 45%;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 6px;
+  display: block;
+  color: #1c00b5;
+}
+
+button {
+  background: #1c00b5;
+  width: 130px;
+  border: none;
+  outline: none;
+  color: white;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+.contact-left h3 {
+  color: 1c00b5;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/**FOOTER**/
+
+footer {
+  background: #0d0d0d;
+  height: auto;
+  width: 100%;
+
+  color: #f2f2f2;
+  /* position: absolute;
+  margin-top: 20%; */
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+/*
+.footer-content h3 {font-size: 1.8rem;
+         font-weight: 400;
+         text-transform: capitalize;
+         line-height: 3rem;}*/
+
+.footer-content p {
+  max-width: 500px;
+  margin: 2em auto;
+  line-height: 28px;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -0.5em 0 1.5em 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+}
+
+.socials a:hover i {
+  color: #1dbbf4;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#footereventi {
+  height: auto;
+  width: 100%;
+  margin-top: 40%;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1024px) {
+  /* Menu */
+  .inner_main_menu {
+    margin: 0 auto;
+    width: 1170px;
+  }
+
+  .inner_main_menu ul {
+    margin: 0;
+    padding: 65px;
+    list-style: none;
+    text-align: right;
+  }
+
+  .inner_main_menu ul li {
+    float: none;
+    display: inline-block;
+  }
+
+  .inner_main_menu ul li:nth-child(1) {
+    float: left;
+  }
+
+  .inner_main_menu ul li:nth-child(2) {
+    float: left;
+  }
+
+  .inner_main_menu ul li:nth-child(3) {
+    float: left;
+  }
+
+  .inner_main_menu ul li a {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 15px 10px;
+  }
+
+  .inner_main_menu ul li a:hover {
+    color: #1dbbf4;
+  }
+
+  #main_menu {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .logo_area {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -100px;
+  }
+
+  /* Homepage */
+  .div1social {
+    display: block;
+    margin-left: 5em;
+    padding-top: 20em;
+    width: 10%;
+    float: left;
+  }
+
+  .div1social a {
+    color: white;
+    width: 80px;
+    color: white;
+  }
+
+  .div1social a:hover {
+    color: #1dbbf4;
+  }
+
+  .div1social a .fa-brands {
+    font-size: 45px;
+    line-height: 80px;
+  }
+
+  .div2foto {
+    width: 80%;
+    float: right;
+    padding-left: 8em;
+  }
+
+  .div2foto img {width: 65%;}
+
+  #toggleButton {display: none;
+      }
+
+  
+
+  /* Eventi */
+  .layout_eventi {
+    flex-direction: row;
+  }
+  .div2fotoeventi {
+    max-width: 60%;
+  }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+#toggleButton {background-color: #000000;
+              box-shadow: none;
+              border-radius: 10%;
+              text-decoration: none;
+            }
+
+.inner_main_menu_mobile ul li a {color: white;
+  padding-top: -20em;
+  padding-left: 70%;
+          text-decoration: none;      }
+
+.inner_main_menu_mobile ul li a:hover  {color: #1dbbf4; 
+          text-decoration: none;
+                }
+
+#logo {
+  width: 12em;
+}
+
+#toggleButton {width: 5em;
+              margin-right: 1.5em;
+              margin-top: -1em;}
+.album {width: 100%; padding-left: 2em; padding-right: 2em;}
+
+}
+
+
+/*BIO*/
+@media only screen and (max-width: 768px) {
+  
+  
+  .timeline::before {display: none;}
+
+  .timeline ul li::after{display: none;}
+
+  .container {padding: 2em;
+  }
+
+  .timeline ul li p { font-size: 1.1em;
+  }
+
+  .timeline ul li {margin-bottom: 5em;}
+  
+
+/*home*/
+
+@media screen and (max-width: 1024px) {
+
+.div2foto {width:%;}
+
+
+}
