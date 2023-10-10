@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html> 
-    <head>
-    
+<html lang="it">
+
+<head>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMB8MT0LZ6"></script>
 <script>
@@ -12,39 +12,178 @@
   gtag('config', 'G-PMB8MT0LZ6');
 </script>
 
-        <title>Sheik</title> 
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <h1>documentazione</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="eventi.html">eventi</a></li>
-                    <li><a href="album.html">album</a></li>
+    <title>Sheik</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0af2b31f76.js" crossorigin="anonymous"></script>
+</head>
 
-                    <!-- mettere il logo qua in mezzo-->
+<body>
+    <header>
+        <div id="main_menu">
+            <div class="logo_area">
+                <a><img id="logo" src="img/titolo.png"></a>
+            </div>
 
-                    <li><a href="bio.html">bio</a></li>
-                    <li><a href="news.html">news</a></li>                    
-                    <li><a href="contatti.html">contatti</a></li>
-
-                    <li><a href="documentazione.html">documentazione</a></li>
+            <div class="inner_main_menu">
+                <ul class="menu">
+                    <li><a class="blacklink sottolineati" href="index.html">home</a></li>
+                    <li><a class="blacklink sottolineati" href="eventi.html">eventi</a></li>
+                    <li><a class="blacklink sottolineati" href="album.html">album</a></li>
+                    <li><a class="blacklink sottolineati" href="bio.html">bio</a></li>
+                    <li><a class="blacklink sottolineati" href="foto.html">foto</a></li>
+                    <li><a class="blacklink sottolineati" href="contatti.html">contatti</a></li>
                 </ul>
-            </nav>
-        </header>
-       
-        <main></main>
+            </div>
+        </div>
+
+        <div id="mobile_menu">
+            <div class="logo_area">
+                <a><img id="logo" src="img/titolo.png"></a>
+            </div>
+            <button id="toggleButton"><i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></button>
+        </div>
+        <div class="inner_main_menu_mobile" style="display: none;">
+            <ul class="menu">
+                <li><a class="blacklink sottolineati" href="index.html">home</a></li>
+                <li><a class="blacklink sottolineati" href="eventi.html">eventi</a></li>
+                <li><a class="blacklink sottolineati" href="album.html">album</a></li>
+                <li><a class="blacklink sottolineati" href="bio.html">bio</a></li>
+                <li><a class="blacklink sottolineati" href="foto.html">foto</a></li>
+                <li><a class="blacklink sottolineati" href="contatti.html">contatti</a></li>
+            </ul>
+        </div>
+    </header>
+                
+    <div class="documentazione">
+            <ul>
+                <div class="box">
+                    <li>
+                        <h1 class="capitoli">Abstract</h1> 
+                            <p>Il sito web è su un giovane artista rap sardo. Lo scopo principale è quello di avere un sitoweb ufficiale nel quale è possibile avere informazioni generali sulla sua vita, conoscere le date dei prossimi eventi, rimanere aggiornati sull’uscita degli album e dare la possibilità al cantante di essere cercato da altre figure professionali (grafici, altri artisti, cantanti) per aumentare le sue collaborazioni. 
+                            </p>
+                    </li>
+
+                    <li>
+                        <h1 class="capitoli">Project Managment Plan</h1> 
+                            <h2>Benchmarching</h2>               
+                            <p>L'obiettivo consiste nella creazione di un blog dove gli utenti possono conoscere l'artista Sheik.
+                            <br>Il target comprende persone a cui piace ascoltare musica rap.</br>
+                            <br>Ho analizzato i siti dei principali rapper più famosi. Marracash, Que Pequeno, Mahmood, Salmo. Gli aspetti che ho considerato sono la possibilità di leggere la biografia, di essere aggiornati sugli eventi, di poter conoscere la discografia direttametne dal sito. Ho dato un valore da uno a 1 a 5 che corrispondono corrispettivamente da ‘per nulla soddisfacente’ a ‘molto soddisfatto’.</br>
+                            <br>Biofragia: in tutti e 4 i casi ho dato 1, non trovando per nulla soddisfatto questo requisito.
+                            <br>Album: in tutti e 4 i casi ho dato 3, dato che viene citato solo l'ultimo album</br>
+                            Eventi: Marracash e Gue Pequeno 5, Mahomood e Salmo 1, in quanto non vengono citate le ultime date dei concerti
+                                </p>
+                           
+                            <br><h2>Struttura e layout</h2></br>
+                        <img class="imgdocumentazione" src="img/doc1.jpg" >
+                        <img class="imgdocumentazione2" src="img/doc2.jpg" alt="">
+                        <p>Look and feel:
+                            <br>- bianco: paragrafi, menu</br>
+                            - celeste: compare al passaggio del mouse 
+                            <br>- nero: sfondo di tutto il sito</br>
+                            - grigio scuro: sfondo dei contenitori, box dei capitoli con i paragrafi e degli album
+                            <br>- rosso: capitoli </br>
+                            - blu: solo nella parte contatti per indicare le azioni che deve svolgere l’utente
+                                </p>
+                        <p>Font:
+                            <br>- Orbitron solo per il menu (per dare un aspetto coerente con il logo)</br>
+                            - Montserrat per tutti gli altri testi nel sitoweb
+                        </p>
+                        <br><h2>Linguaggi e strumenti</h2> </br>
+                        <p>- Html: da capo per tutto il sito
+                            <br> - Css: da capo per tutto il sito</br>
+                             - Javascript per avere un menu ad hamburger nel device mobile funzionante
+                            <br> - Bootstrap per il carosello delle immagini</br>
+                            - Power point per il logo Sheik
+                            <br> - Github per la pubblicazione</br>
+                            - Google font per i font
+                            <br> - W3school, html.it,sos-wp, canali youtube per imparare a utilizzare i linguaggi</br>
+                            - Facebook, instagram, what’s up per la sponsorizzazione
+                            <br> - Spotify per collegare il sito  con gli album pubblicati su spotify</br>
+                            - Css: da capo per tutto il sito
+                            <br> - Google analytics: per analizzare gli utenti</br>
+                            - Webaim.org per trovare un buon contrasto di colori 
+                            <br> - Cssgradient.it per fare una leggera sfumatura a cerchio in una foto che si trova nella pagina eventi</br>
+                        </p>
+                    </li>
+
+                    <li> 
+                        <h1 class="capitoli">Comunication strategy</h1> 
+                        <br><h2>Background</h2> </br>
+                        <p>Grazie ai siti che ho analizzato ho ritenuto opportuno utilizzare anche per il mio sito lo sfondo nero perchè mi sembra una soluzione vincente e d’impatto, soprattutto in questo genere di musica. <br>Un altro pro che ho potuto notare è l’utilizzo di uno stile semplice e senza troppe animazioni o contenuto, riportandolo anche nel mio sitoweb. </br>
+                            A differenza dei siti che ho analizzato ho aggiunto biografia e album, perchè trovo che questi due aspetti rendano completo e adeguato un sito professionale di un musicista. Infatti, queste pagine permetteno a tutti gli utenti di poter leggere e conoscere la vita dell’artista, poter ascoltare tutti i suoi album senza dare niente per scontato.
+                        </p>
+                        <br><h2>Obiettivi comunicativi</h2> </br>
+                        <p>L’obiettivo comunicativi del sito web è quello di dare una panoramica generale su l’artista Sheik, in modo tale che in un unica soluzione si possano trovare biografia, eventi, album. Per di più, se l’utente trova interessante il musicista è presente anche la possibilità di mettersi in contatto. 
+                        <br>L'altro obiettivo è raggiungere 50 visite nel sito web.</br>
+                        </p>
+                        <br><h2>Target audience e messaggio</h2> </br>
+                        <p>Utenti dai 18 ai 40 anni. Ragion per cui, il sito è stato pubblicato su Facebook e Istagram. Il genere è indifferente.</p>
+                        <br>Con questo sito vorrei che venga scoperto l’artista Sheik e che abbia uno spazio nel quale è presente una panoramica generale della sua persona e attività musicale. Per gli utenti artisti la possibilità di mettersi in contatto con il musicista. </br>
+                        <br><h2>Promozione</h2> </br>
+                        <p>Per promuovere il sito ho utilizzato Facebook, Instagram, What's up. </p>
+                        <br><h2>Valutazione dei risultati</h2> </br>
+                        <p></p>
+                       
+                    </li>
+                    
+
+
+
+
+                </div>
+            </ul>
+
+                
+    </div>
+
+
+
+
+
+    <div style="clear: both"></div>
+
         <footer>
-            <p>sito realizzato da Rita Tolu</p>
-          </footer>
+            <div class="footer-content">
+                <p>Sheik US - Daniele Marini</p>
+                <ul class="socials">
+                    <li><a target="_blank" href="https://www.facebook.com/sheikus"><i
+                                class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/sheik_underskillz/"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com/@SHEIKUS"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li><a target="_blank" href="https://open.spotify.com/intl-it/artist/4XQDe7NCA4r7UR7ZrLYYtW"><i
+                                class="fa-brands fa-spotify"></i></a></li>
+                    <li><a class="active" href="documentazione.html">documentazione</a></li>
+                </ul>
+            </div>
+        </footer>
+    
+        <script>
+            const toggleButton = document.getElementById('toggleButton');
+            const menuMobile = document.querySelector('.inner_main_menu_mobile');
+    
+            // Aggiungi un gestore di eventi al pulsante
+            toggleButton.addEventListener('click', function () {
+                // Verifica lo stato corrente del display del menu mobile
+                if (menuMobile.style.display === 'none' || menuMobile.style.display === '') {
+                    // Se il menu è nascosto, mostralo
+                    menuMobile.style.display = 'block';
+                } else {
+                    // Altrimenti, nascondilo
+                    menuMobile.style.display = 'none';
+                }
+            });
+        </script>
     </body>
 
 
-
-
-
-
 </html>
+
