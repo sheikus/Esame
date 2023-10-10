@@ -31,7 +31,7 @@ header {
   height: 220px;
 }
 
-
+/*DOCUMENTAZIONE*/
 .box {width: 100%;
       padding: 10em;
       border: 5px;
@@ -40,11 +40,14 @@ header {
       font-size: 20px;
       font-family: "Montserrat", sans-serif;
       letter-spacing: 3px;
-      list-style: none;}
+      list-style: none;
+      }
 
 .box .capitoli {color: red;}
 .imgdocumentazione {width: 25em;}
 .imgdocumentazione2 {width: 25em;}
+.imgdocumentazione {width: 20em;}
+
 
 /*EVENTI*/
 
