@@ -31,6 +31,21 @@ header {
   height: 220px;
 }
 
+
+.box {width: 100%;
+      padding: 10em;
+      border: 5px;
+      background: black;
+      color: white;
+      font-size: 20px;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 3px;
+      list-style: none;}
+
+.box .capitoli {color: red;}
+.imgdocumentazione {width: 25em;}
+.imgdocumentazione2 {width: 25em;}
+
 /*EVENTI*/
 
 .layout_eventi {
@@ -561,8 +576,8 @@ footer {
 
 /*home*/
 
-@media screen and (max-width: 1024px) {
 
+  
 
 
 }
